@@ -1,0 +1,336 @@
+BEGIN_DESC
+BEGIN_HYPERDESC
+<h1> Jupiter Gravity Assist</h1>
+<p1>Sling past Jupiter and launch the Probes!</p1> 
+</br> </br>
+<p1>TransX 2018.05.06 set up.</p1>
+</br> </br>
+<p1> CTRL-A to open attachment dialogue. Left-Shift 4 or Left-Shift 6 to cycle the Probe bays. Left-Shift 0 to launch each probe.</p1>
+</br> </br>
+<p1> 'K' to deploy Probe solar arrays.</p1>
+</br> </br>
+<p1> The Probes have enough delta-v for orbit insertion.</p1>
+END_HYPERDESC
+END_DESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 87706.5193562149
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 2.386799 21.446652 -10.170001
+  TRACKMODE TargetRelative
+  FOV 31.81
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 3
+  Int 4
+  Orbit True
+  Vector  2819986461.05 956125603.666 -5005741308.2
+  Vector  -1575.98588177 -1720.73708956 8571.43455104
+  Double  1.26686534397e+017
+  Double  87706.5193308
+  Handle Jupiter
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 1
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  87706.5193298
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 0
+Advanced
+0 0
+View Orbit
+0 0
+Finvars
+  Finish BaseFunction
+  Int 3
+  Orbit True
+  Vector  -789853386814 16037926482.7 246166576927
+  Vector  -9654.30894178 697.859218201 -13883.1241123
+  Double  1.32839126489e+020
+  Double  87713.0901707
+  Handle Sun
+  Handle Jupiter
+  Handle Saturn
+Select Target
+ 0 Saturn
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 2
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  87706.5192964
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 1
+Scale to view
+0 1
+Advanced
+0 0
+Velocity.
+ 1  0
+Outward angle
+ 4  0.892916030374
+Inc. angle
+ 4  -0.0712935583514
+Inherit Vel.
+0 0
+Eject date
+ 1  87713.0901707
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  432956411176 -33649963849.8 331910936411
+  Vector  -5973.13732023 463.714531051 -4571.04597264
+  Double  3.79311866084e+016
+  Double  87886.308826
+  Handle Saturn
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  87706.5192843
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS 4202872.933 604467.953 5339167.782
+  RVEL -6008.5386 51.5315 4724.8728
+  AROT 4.345 -1.396 -165.445
+  VROT 0.0849 0.0064 0.0010
+  PRPLEVEL 0:0.911512
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Jupiter
+  RPOS 2819982996.528 956121820.932 -5005722465.430
+  RVEL -1575.9898 -1720.7384 8571.4416
+  AROT -11.335 10.237 1.640
+  VROT 0.0007 0.0081 0.0025
+  RCSMODE 2
+  AFCMODE 7
+  PRPLEVEL 0:0.681738
+  DOCKINFO 0:0,DeepstarAerolander1 1:0,DeepstarAerolander2 2:0,DeepstarLander1 3:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  SPIN_GRAVITY 1 0.4415
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Jupiter
+  RPOS 2819982995.592 956121817.306 -5005722447.674
+  RVEL -1575.9898 -1720.7384 8571.4416
+  AROT -11.335 10.237 1.640
+  VROT 0.0007 0.0081 0.0025
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  NAVFREQ 0 0
+  XPDR 481
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Jupiter
+  RPOS 2819982991.067 956121817.595 -5005722448.449
+  RVEL -1575.9898 -1720.7384 8571.4416
+  AROT -11.335 10.237 1.640
+  VROT 0.0007 0.0081 0.0025
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  NAVFREQ 0 0
+  XPDR 480
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Jupiter
+  RPOS 2819982997.729 956121829.478 -5005722469.247
+  RVEL -1575.9887 -1720.7386 8571.4417
+  AROT -11.335 10.237 -178.360
+  VROT -0.0007 -0.0081 0.0025
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:0,Deepstar
+  IDS 0:562 100
+  NAVFREQ 0 0
+  XPDR 560
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Jupiter
+  RPOS 2819982997.728 956121829.476 -5005722469.241
+  RVEL -1575.9887 -1720.7386 8571.4417
+  AROT -11.335 10.237 -178.360
+  VROT -0.0007 -0.0081 0.0025
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Jupiter
+  RPOS 2819982997.299 956121814.533 -5005722472.322
+  RVEL -1575.9894 -1720.7385 8571.4418
+  AROT -11.335 10.237 1.640
+  VROT 0.0007 0.0081 0.0025
+  PRPLEVEL 0:0.981414
+  DOCKINFO 0:1,Deepstar
+  IDS 0:572 100
+  NAVFREQ 0 0
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Jupiter
+  RPOS 2819982997.298 956121814.533 -5005722472.315
+  RVEL -1575.9894 -1720.7385 8571.4418
+  AROT -11.335 10.237 1.640
+  VROT 0.0007 0.0081 0.0025
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Jupiter
+  RPOS 2819982989.719 956121821.368 -5005722466.596
+  RVEL -1575.9896 -1720.7380 8571.4408
+  AROT 78.374 -1.614 100.241
+  VROT 0.0025 0.0007 0.0081
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:2,Deepstar
+  IDS 0:542 100
+  NAVFREQ 0 0
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Jupiter
+  RPOS 2819983003.337 956121820.496 -5005722464.263
+  RVEL -1575.9900 -1720.7389 8571.4425
+  AROT 78.374 -1.614 -79.759
+  VROT -0.0025 -0.0007 0.0081
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:3,Deepstar
+  IDS 0:552 100
+  XPDR 550
+END
+Depot2:Deepstar\Depot2
+  STATUS Orbiting Saturn
+  RPOS 130591071.784 -65946010.316 102998901.480
+  RVEL -9866.3828 -4064.1228 9906.3220
+  AROT -174.250 -80.529 146.804
+  PRPLEVEL 0:0.996172
+  IDS 0:401 100 1:402 100
+  XPDR 400
+END
+END_SHIPS

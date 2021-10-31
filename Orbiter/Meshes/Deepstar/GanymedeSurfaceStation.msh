@@ -1,0 +1,21 @@
+MSHX1
+GROUPS 1
+LABEL surface
+MATERIAL 1
+TEXTURE 1
+GEOM 4 2 ; surface
+178.247 0.0 241.03 0.0 1.0 0.0 0.0 1.0
+-207.423 0.0 241.03 0.0 1.0 0.0 1.0 1.0
+178.247 0.0 -144.64 0.0 1.0 0.0 0.0 0.0
+-207.423 0.0 -144.64 0.0 1.0 0.0 1.0 0.0
+0 3 1
+3 0 2
+MATERIALS 1
+03 - Default
+MATERIAL 03 - Default
+1.0 1.0 1.0 1.0
+1.0 1.0 1.0 1.0
+0.9 0.9 0.9 1.0 0.0
+0.0 0.0 0.0 1.0
+TEXTURES 1
+Deepstar\ganymede_surface.dds

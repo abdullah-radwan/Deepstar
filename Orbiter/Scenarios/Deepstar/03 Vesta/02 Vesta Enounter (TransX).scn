@@ -1,0 +1,276 @@
+BEGIN_HYPERDESC
+<h1> Deepstar Vesta Encounter</h1>
+<p1> Deepstar approaching Vesta orbit insertion.</p1>
+</br> </br>
+<p1>Includes TransX 2018.05.06 encounter stage.</p1> 
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 88802.7666144317
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 1.790642 20.587216 -2.252566
+  TRACKMODE TargetRelative
+  FOV 39.88
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 2
+  Int 0
+  Orbit True
+  Vector  29061534507.1 5984038020.34 -322232894388
+  Vector  15663.1732353 2618.89030146 2088.955907
+  Double  1.32712439955e+020
+  Double  88802.7665857
+  Handle Sun
+  Handle Earth
+  Handle Vesta
+Select Target
+ 0 Vesta
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 2  0
+Man. date
+ 1  88802.7665857
+Outward vel.
+ 2  0
+Ch. plane vel.
+ 3  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 0
+Advanced
+0 0
+Finvars
+  Finish BaseFunction
+  Int 0
+  Orbit True
+  Vector  165633570.991 -164586860.942 -27169742.8285
+  Vector  -5230.70388597 5197.15597384 857.606750691
+  Double  17287079268.4
+  Double  88802.7665863
+  Handle Vesta
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  88802.7665857
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS 3183984.532 603036.693 6002633.149
+  RVEL -6749.3949 -69.4873 3588.0235
+  AROT -168.142 33.722 94.888
+  VROT 0.0639 0.0013 0.0094
+  PRPLEVEL 0:0.911512
+  DOCKINFO 1:0,DeepstarAerolander2 2:0,DeepstarAerolander1
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  NAVFREQ 0 0
+  XPDR 510
+  ANIM_0 -2 0.0000
+  ANIM_1 0 0.0000
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Sun
+  RPOS 29061573418.218 5984044526.299 -322232889198.617
+  RVEL 15663.1730 2618.8902 2088.9590
+  AROT 76.359 47.434 69.133
+  PRPLEVEL 0:0.549775
+  DOCKINFO 0:0,DeepstarLander1 1:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  ANIM_0 1 0.0133
+  ANIM_1 0 0.0000
+  ANIM_2 0 0.0000
+  ANIM_3 0 0.0000
+  ANIM_4 0 0.0000
+  ANIM_5 -2 0.0000
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Sun
+  RPOS 29061573405.516 5984044538.211 -322232889193.515
+  RVEL 15663.1730 2618.8902 2088.9590
+  AROT 76.359 47.434 69.133
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  XPDR 481
+  ANIM -2 0.0000
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Sun
+  RPOS 29061573404.407 5984044538.051 -322232889197.977
+  RVEL 15663.1730 2618.8902 2088.9590
+  AROT 76.359 47.434 69.133
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  XPDR 480
+  ANIM -2 0.0000
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 3184078.067 602976.587 6002785.040
+  RVEL -6749.5379 -69.4801 3588.1145
+  AROT -176.900 -55.967 -172.725
+  VROT 0.0094 0.0639 0.0013
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:2,EarthStation
+  IDS 0:562 100
+  NAVFREQ 0 0
+  XPDR 560
+  ANIM_0 2 1.0000
+  ANIM_1 -2 0.0000
+  ANIM_2 -2 0.0000
+  ANIM_3 -2 0.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 3184078.072 602976.587 6002785.036
+  RVEL -6749.5379 -69.4801 3588.1145
+  AROT -176.900 -55.967 -172.725
+  VROT 0.0094 0.0639 0.0013
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 3184083.530 603003.975 6002791.659
+  RVEL -6749.5538 -69.4793 3588.1245
+  AROT -176.900 -55.967 -82.725
+  VROT -0.0639 0.0094 0.0013
+  PRPLEVEL 0:0.999600
+  DOCKINFO 0:1,EarthStation
+  IDS 0:572 100
+  NAVFREQ 0 0
+  XPDR 570
+  ANIM_0 2 1.0000
+  ANIM_1 -2 0.0000
+  ANIM_2 -2 0.0000
+  ANIM_3 -2 0.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 3184083.536 603003.975 6002791.654
+  RVEL -6749.5538 -69.4793 3588.1245
+  AROT -176.900 -55.967 -82.725
+  VROT -0.0639 0.0094 0.0013
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Sun
+  RPOS 29061573422.594 5984044531.509 -322232889199.890
+  RVEL 15663.1730 2618.8902 2088.9590
+  AROT 76.359 47.434 -110.867
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:0,Deepstar
+  IDS 0:542 100
+  NAVFREQ 0 0
+  XPDR 540
+  ANIM -2 0.0000
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Sun
+  RPOS 29061573413.843 5984044521.088 -322232889197.345
+  RVEL 15663.1729 2618.8903 2088.9590
+  AROT 76.359 47.434 69.133
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:1,Deepstar
+  IDS 0:552 100
+  NAVFREQ 0 0
+  XPDR 550
+  ANIM -2 0.0000
+END
+Rover3:Deepstar\Rover1
+  STATUS Landed Vesta
+  POS 164.1542742 -39.1505743
+  HEADING 0.48
+  ALT 0.001
+  AROT 78.040 37.564 -109.754
+  AFCMODE 7
+  NAVFREQ 0 0
+END
+END_SHIPS

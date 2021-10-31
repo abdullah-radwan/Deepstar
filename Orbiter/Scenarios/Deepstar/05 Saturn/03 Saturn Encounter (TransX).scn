@@ -1,0 +1,188 @@
+BEGIN_HYPERDESC
+<h1> Deepstar Saturn Encounter</h1>
+<p1> Deepstar approaching Saturn orbit insertion.</p1>
+</br> </br>
+<p1>Includes TransX 2018.05.06 encounter stage.</p1> 
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 88698.5325242676
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 2.092658 6.979468 -8.880846
+  TRACKMODE TargetRelative
+  FOV 31.81
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Orbit
+  PROJ Ship
+  FRAME Equator
+  ALT
+  REF Saturn
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 1
+  Int 5
+  Orbit True
+  Vector  648382212.259 -64444660.157 958884367.942
+  Vector  -8831.34298942 674.258259427 -6922.14686891
+  Double  3.79311866084e+016
+  Double  88698.5324789
+  Handle Saturn
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  88698.5324787
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 1
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS 6667094.286 433223.896 1375576.947
+  RVEL -1570.6463 475.1847 7466.2348
+  AROT 25.048 -33.162 137.504
+  VROT 0.0850 -0.0003 -0.0061
+  PRPLEVEL 0:0.911512
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Saturn
+  RPOS 648347609.506 -64442018.293 958857245.674
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 174.437 51.779 175.340
+  PRPLEVEL 0:0.640000
+  DOCKINFO 0:0,DeepstarAerolander1 1:0,DeepstarAerolander2 2:0,DeepstarLander1 3:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  SPIN_GRAVITY 1 0.4415
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Saturn
+  RPOS 648347614.250 -64442011.007 958857249.344
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 174.437 51.779 -4.660
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:0,Deepstar
+  IDS 0:562 100
+  XPDR 560
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Saturn
+  RPOS 648347614.244 -64442011.008 958857249.340
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 174.437 51.779 -4.660
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Saturn
+  RPOS 648347613.482 -64442026.244 958857248.839
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 174.437 51.779 175.340
+  PRPLEVEL 0:0.981414
+  DOCKINFO 0:1,Deepstar
+  IDS 0:572 100
+  NAVFREQ 0 0
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Saturn
+  RPOS 648347613.477 -64442026.242 958857248.835
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 174.437 51.779 175.340
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Saturn
+  RPOS 648347613.774 -64442018.327 958857240.225
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 88.101 -2.881 -141.871
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:2,Deepstar
+  IDS 0:542 100
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Saturn
+  RPOS 648347605.237 -64442018.258 958857251.123
+  RVEL -8831.4048 674.2644 -6922.2383
+  AROT 88.101 -2.881 38.129
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:3,Deepstar
+  IDS 0:552 100
+  XPDR 550
+END
+Depot2:Deepstar\Depot2
+  STATUS Orbiting Saturn
+  RPOS -39297195.036 -76289380.487 156971616.711
+  RVEL -14145.2263 2601.7263 -2277.2443
+  AROT -174.250 -80.529 146.804
+  PRPLEVEL 0:0.996172
+  IDS 0:401 100 1:402 100
+  XPDR 400
+END
+END_SHIPS

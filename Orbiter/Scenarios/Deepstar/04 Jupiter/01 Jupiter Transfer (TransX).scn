@@ -1,0 +1,338 @@
+BEGIN_HYPERDESC
+<h1> Deepstar Jupiter Transfer</h1>
+<p1> Start with Deepstar approaching TJI.</p1> 
+</br> </br>
+<p1>TransX 2018.05.06 set up.</p1>
+</br> </br>
+<p1> These scenarios include Deepstar's Earth Orbit Station and Jupiter Propellant Depot as rendezvous targets.</p1>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 88450.9609338683
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 1.805926 20.476472 -3.469593
+  TRACKMODE TargetRelative
+  FOV 40.26
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 3
+  Int 1
+  Orbit True
+  Vector  -3848346.45396 -4261764.75774 -3194650.50444
+  Vector  4321.79087878 906.66715743 -6415.6480977
+  Double  3.98600439969e+014
+  Double  88450.9609335
+  Handle Earth
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  88450.960933
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 0
+Advanced
+0 0
+Pe Distance
+ 4  6571489.16284
+Ej Orientation
+ 1  0
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit False
+  Handle Sun
+  Handle Earth
+  Handle Jupiter
+Select Target
+ 0 Jupiter
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 1
+Prograde vel.
+ 1  0
+Man. date
+ 1  88450.960933
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 0
+Advanced
+0 0
+Prograde vel.
+ 6  8006.62808346
+Eject date
+ 6  88451.2262916
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 5  7015.65656753
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  401574227183 -132451275703 272563678660
+  Vector  -4922.79560853 1623.64121682 -3340.69638065
+  Double  1.26686534397e+017
+  Double  88461.4941834
+  Handle Jupiter
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  88449.2331236
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS 3907597.290 606068.944 5558362.509
+  RVEL -6253.9093 14.9973 4395.7715
+  AROT 16.470 -50.027 -105.777
+  VROT 0.0639 0.0020 0.0093
+  PRPLEVEL 0:0.911512
+  DOCKINFO 1:0,DeepstarAerolander2 2:0,DeepstarAerolander1
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  NAVFREQ 0 0
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Earth
+  RPOS -3848194.439 -4261732.863 -3194876.164
+  RVEL 4321.9810 906.8778 -6415.4902
+  AROT 171.845 -33.795 -134.685
+  VROT -0.0000 0.0825 -0.0000
+  PRPLEVEL 0:0.947578
+  DOCKINFO 0:0,DeepstarLander1 1:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  SPIN_GRAVITY 1 0.4415
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Earth
+  RPOS -3848185.771 -4261732.232 -3194892.094
+  RVEL 4321.9810 906.8778 -6415.4902
+  AROT 171.845 -33.795 -134.685
+  VROT -0.0000 0.0825 -0.0000
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  XPDR 481
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Earth
+  RPOS -3848183.083 -4261729.250 -3194889.849
+  RVEL 4321.9810 906.8778 -6415.4902
+  AROT 171.845 -33.795 -134.685
+  VROT -0.0000 0.0825 -0.0000
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  XPDR 480
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 3907489.750 605950.862 5558262.889
+  RVEL -6253.8029 15.0114 4395.6400
+  AROT -3.768 38.186 -12.840
+  VROT 0.0093 0.0639 0.0020
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:2,EarthStation
+  IDS 0:562 100
+  XPDR 560
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 3907489.745 605950.863 5558262.894
+  RVEL -6253.8029 15.0114 4395.6400
+  AROT -3.768 38.186 -12.840
+  VROT 0.0093 0.0639 0.0020
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 3907475.248 605973.551 5558252.953
+  RVEL -6253.7907 15.0129 4395.6258
+  AROT -3.768 38.186 77.160
+  VROT -0.0639 0.0093 0.0020
+  RCSMODE 2
+  AFCMODE 7
+  PRPLEVEL 0:0.999600
+  DOCKINFO 0:1,EarthStation
+  IDS 0:572 100
+  NAVFREQ 0 0
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 3907475.245 605973.551 5558252.959
+  RVEL -6253.7907 15.0129 4395.6258
+  AROT -3.768 38.186 77.160
+  VROT -0.0639 0.0093 0.0020
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Earth
+  RPOS -3848198.529 -4261727.657 -3194878.183
+  RVEL 4321.9810 906.8778 -6415.4902
+  AROT 171.845 -33.795 45.315
+  VROT 0.0000 -0.0825 -0.0000
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:0,Deepstar
+  IDS 0:542 100
+  NAVFREQ 0 0
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Earth
+  RPOS -3848190.349 -4261738.070 -3194874.145
+  RVEL 4321.9810 906.8778 -6415.4902
+  AROT 171.845 -33.795 -134.685
+  VROT -0.0000 0.0825 -0.0000
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:1,Deepstar
+  IDS 0:552 100
+  NAVFREQ 0 0
+  XPDR 550
+END
+Depot1:Deepstar\Depot1
+  STATUS Orbiting Jupiter
+  RPOS 3344418.652 -4332422.205 -140554278.788
+  RVEL 29999.8526 408.0185 702.9303
+  AROT 1.532 18.758 -0.778
+  VROT 0.0000 0.0122 0.0000
+  PRPLEVEL 0:0.998927
+  IDS 0:401 100 1:402 100
+  XPDR 400
+END
+Rover2:Deepstar\Rover1
+  STATUS Landed Ganymede
+  POS -75.1235269 -11.3667939
+  HEADING 91.44
+  ALT 0.001
+  AROT -5.373 -74.776 106.556
+  AFCMODE 7
+  NAVFREQ 0 0
+END
+END_SHIPS

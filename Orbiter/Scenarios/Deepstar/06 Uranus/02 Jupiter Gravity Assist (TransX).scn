@@ -1,0 +1,330 @@
+BEGIN_HYPERDESC
+<h1> Jupiter Gravity Assist</h1>
+<p1>Sling past Jupiter to Uranus.</p1> 
+</br> </br>
+<p1>TransX 2018.05.06 set up.</p1>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 89989.7820857366
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 2.114641 45.836623 -11.315916
+  TRACKMODE TargetRelative
+  FOV 40.26
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 3
+  Int 4
+  Orbit True
+  Vector  -3031328692.15 -228852671.557 1743375273.57
+  Vector  4523.08738528 1096.60130489 -9785.45251715
+  Double  1.26686534397e+017
+  Double  89989.782055
+  Handle Jupiter
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 1
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  89989.7820543
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+View Orbit
+0 0
+Finvars
+  Finish BaseFunction
+  Int 3
+  Orbit True
+  Vector  737622103335 -14277721055.5 -185331243622
+  Vector  9581.64028845 -115.674845208 14206.8315726
+  Double  1.32839126489e+020
+  Double  89993.229472
+  Handle Sun
+  Handle Jupiter
+  Handle Uranus
+Select Target
+ 0 Uranus
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 2
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  89989.7820232
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 1
+Scale to view
+0 1
+Advanced
+0 0
+Velocity.
+ 1  10
+Outward angle
+ 4  1.22043819971
+Inc. angle
+ 5  -0.023560094853
+Inherit Vel.
+0 0
+Eject date
+ 1  89993.229472
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  -299476330733 -90712256.4189 -440832847721
+  Vector  2976.07504362 0.774477061724 4380.20063755
+  Double  5.793946952e+015
+  Double  92712.0759605
+  Handle Uranus
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  89989.7820161
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS 6714385.403 417172.625 1127283.740
+  RVEL -1292.5451 492.9291 7518.3931
+  AROT 175.378 -21.859 74.726
+  VROT 0.0639 0.0020 0.0093
+  PRPLEVEL 0:0.911512
+  DOCKINFO 1:0,DeepstarAerolander1 2:0,DeepstarAerolander2
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Jupiter
+  RPOS -3031316694.107 -228849762.692 1743349316.528
+  RVEL 4523.1110 1096.6031 -9785.4662
+  AROT 173.611 -24.701 -179.052
+  PRPLEVEL 0:0.736836
+  DOCKINFO 0:0,DeepstarLander1 1:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  SPIN_GRAVITY 1 0.4415
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Jupiter
+  RPOS -3031316688.675 -228849760.803 1743349299.318
+  RVEL 4523.1110 1096.6031 -9785.4662
+  AROT 173.611 -24.701 -179.052
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  NAVFREQ 0 0
+  XPDR 481
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Jupiter
+  RPOS -3031316684.496 -228849760.941 1743349301.236
+  RVEL 4523.1110 1096.6031 -9785.4662
+  AROT 173.611 -24.701 -179.052
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  NAVFREQ 0 0
+  XPDR 480
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 6714296.913 417076.161 1127419.005
+  RVEL -1292.6947 492.9834 7518.3340
+  AROT -40.880 -63.549 33.292
+  VROT 0.0093 0.0639 0.0020
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:1,EarthStation
+  IDS 0:562 100
+  XPDR 560
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 6714296.920 417076.160 1127419.008
+  RVEL -1292.6947 492.9834 7518.3340
+  AROT -40.880 -63.549 33.292
+  VROT 0.0093 0.0639 0.0020
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 6714298.279 417099.535 1127435.608
+  RVEL -1292.7111 492.9894 7518.3269
+  AROT -40.880 -63.549 123.292
+  VROT -0.0639 0.0093 0.0020
+  PRPLEVEL 0:0.999600
+  DOCKINFO 0:2,EarthStation
+  IDS 0:572 100
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 6714298.285 417099.533 1127435.609
+  RVEL -1292.7111 492.9894 7518.3269
+  AROT -40.880 -63.549 123.292
+  VROT -0.0639 0.0093 0.0020
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Jupiter
+  RPOS -3031316694.211 -228849755.809 1743349317.251
+  RVEL 4523.1110 1096.6031 -9785.4662
+  AROT 173.611 -24.701 0.948
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:0,Deepstar
+  IDS 0:542 100
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Jupiter
+  RPOS -3031316694.003 -228849769.575 1743349315.806
+  RVEL 4523.1110 1096.6031 -9785.4662
+  AROT 173.611 -24.701 -179.052
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:1,Deepstar
+  IDS 0:552 100
+  XPDR 550
+END
+Depot3:Deepstar\Depot3
+  STATUS Orbiting Uranus
+  RPOS -30658770.390 -42229115.028 703955.175
+  RVEL -8234.4962 6022.5173 2633.4127
+  AROT -95.088 13.363 12.461
+  VROT 0.0000 0.0116 0.0000
+  PRPLEVEL 0:0.979123
+  IDS 0:401 100 1:402 100
+  XPDR 400
+END
+UranusStation:Deepstar\UranusStation
+  STATUS Orbiting Uranus
+  RPOS -370661484.166 23856896.954 83742158.172
+  RVEL 357.7516 3854.8677 465.0916
+  AROT 66.541 51.124 160.459
+  VROT 0.0000 0.0106 0.0000
+  PRPLEVEL 0:0.979235
+  IDS 0:501 100 1:502 100
+  XPDR 500
+END
+END_SHIPS

@@ -1,0 +1,435 @@
+BEGIN_HYPERDESC
+<h1> Deepstar Saturn Transfer</h1>
+<p1> Start with Deepstar approaching TSI.</p1> 
+</br> </br>
+<p1>TransX 2018.05.06 set up.</p1>
+</br> </br>
+<p1> These scenarios include Deepstar's Earth Orbit Station and Saturn Propellant Depot as rendezvous targets.</p1>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 86865.2041238918
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 2.111370 28.791129 2.578310
+  TRACKMODE TargetRelative
+  FOV 31.81
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 5
+  Int 1
+  Orbit True
+  Vector  -2615125.2861 3088800.73901 5190948.96066
+  Vector  -7113.37716019 -2154.84543426 -2303.56252857
+  Double  3.98600439969e+014
+  Double  86865.2041191
+  Handle Earth
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  86865.204119
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 1
+Scale to view
+0 0
+Advanced
+0 0
+Pe Distance
+ 4  7571478.79106
+Ej Orientation
+ 1  0
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit False
+  Handle Sun
+  Handle Earth
+  Handle Jupiter
+Select Target
+ 0 Jupiter
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 1
+Prograde vel.
+ 1  0
+Man. date
+ 1  86865.204119
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Prograde vel.
+ 6  8638.37497853
+Eject date
+ 1  86865.2510136
+Outward vel.
+ 4  62.557
+Ch. plane vel.
+ 5  -5615.41460346
+Finvars
+  Finish BaseFunction
+  Int 4
+  Orbit True
+  Vector  63941889583.6 88165629385.2 -464359454750
+  Vector  -774.952070235 -1117.9657198 5883.08826302
+  Double  1.26686534397e+017
+  Double  86809.5039745
+  Handle Jupiter
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 1
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  86864.5721617
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 0
+Advanced
+0 0
+View Orbit
+0 0
+Finvars
+  Finish BaseFunction
+  Int 3
+  Orbit True
+  Vector  -784999997625 15961507519.9 258814925972
+  Vector  -9882.10074242 702.765017661 -13879.9963376
+  Double  1.32839126489e+020
+  Double  87700.693067
+  Handle Sun
+  Handle Jupiter
+  Handle Saturn
+Select Target
+ 0 Saturn
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 2
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  86864.5721351
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 1
+Scale to view
+0 1
+Advanced
+0 0
+Velocity.
+ 1  0
+Outward angle
+ 4  0.862282011343
+Inc. angle
+ 4  -0.0714433076012
+Inherit Vel.
+0 0
+Eject date
+ 1  87700.693067
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  421851852445 -32315820310.4 322492469718
+  Vector  -6114.63891284 468.49306424 -4668.68843903
+  Double  3.79311866084e+016
+  Double  87903.6569912
+  Handle Saturn
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  86864.5720448
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS -4825590.310 117481.753 4821103.245
+  RVEL -5389.7781 -666.3744 -5378.4057
+  AROT -177.470 -42.953 90.051
+  VROT 0.0850 0.0003 0.0061
+  PRPLEVEL 0:0.911512
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Earth
+  RPOS -2618089.187 3087902.418 5189988.415
+  RVEL -7111.8531 -2156.6442 -2306.5857
+  AROT -136.763 66.388 -168.464
+  VROT -0.0005 0.0867 -0.0276
+  PRPLEVEL 0:0.842937
+  DOCKINFO 0:0,DeepstarAerolander1 1:0,DeepstarAerolander2 2:0,DeepstarLander1 3:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  SPIN_GRAVITY 1 0.4415
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Earth
+  RPOS -2618106.582 3087898.558 5189984.982
+  RVEL -7111.8531 -2156.6442 -2306.5857
+  AROT -136.763 66.388 -168.464
+  VROT -0.0005 0.0867 -0.0276
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  NAVFREQ 0 0
+  XPDR 481
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Earth
+  RPOS -2618104.777 3087896.400 5189981.343
+  RVEL -7111.8531 -2156.6442 -2306.5857
+  AROT -136.763 66.388 -168.464
+  VROT -0.0005 0.0867 -0.0276
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  NAVFREQ 0 0
+  XPDR 480
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS -2618084.713 3087910.346 5189985.931
+  RVEL -7111.8550 -2156.6420 -2306.5820
+  AROT -136.763 66.388 11.536
+  VROT 0.0005 -0.0867 -0.0276
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:0,Deepstar
+  IDS 0:562 100
+  XPDR 560
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS -2618084.719 3087910.344 5189985.929
+  RVEL -7111.8550 -2156.6420 -2306.5820
+  AROT -136.763 66.388 11.536
+  VROT 0.0005 -0.0867 -0.0276
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS -2618083.490 3087897.535 5189994.138
+  RVEL -7111.8578 -2156.6385 -2306.5762
+  AROT -136.763 66.388 -168.464
+  VROT -0.0005 0.0867 -0.0276
+  AFCMODE 7
+  PRPLEVEL 0:0.981414
+  DOCKINFO 0:1,Deepstar
+  IDS 0:572 100
+  NAVFREQ 0 0
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS -2618083.497 3087897.534 5189994.135
+  RVEL -7111.8578 -2156.6385 -2306.5762
+  AROT -136.763 66.388 -168.464
+  VROT -0.0005 0.0867 -0.0276
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Earth
+  RPOS -2618086.470 3087899.169 5189982.939
+  RVEL -7111.8433 -2156.6442 -2306.5809
+  AROT 122.644 4.594 -156.814
+  VROT -0.0276 -0.0005 0.0867
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:2,Deepstar
+  IDS 0:542 100
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Earth
+  RPOS -2618091.903 3087905.666 5189993.890
+  RVEL -7111.8630 -2156.6443 -2306.5906
+  AROT 122.644 4.594 23.186
+  VROT 0.0276 0.0005 0.0867
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:3,Deepstar
+  IDS 0:552 100
+  XPDR 550
+END
+Depot2:Deepstar\Depot2
+  STATUS Orbiting Saturn
+  RPOS -135914427.805 63628834.885 -97410260.849
+  RVEL 9377.5909 4302.0171 -10274.3896
+  AROT -174.250 -80.529 146.804
+  PRPLEVEL 0:0.996172
+  IDS 0:401 100 1:402 100
+  XPDR 400
+END
+END_SHIPS

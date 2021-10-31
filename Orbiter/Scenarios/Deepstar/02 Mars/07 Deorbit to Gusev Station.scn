@@ -1,0 +1,186 @@
+BEGIN_HYPERDESC
+<h1> Mars Entry</h1>
+<p1> Post Deorbit Burn.</p1> 
+</br> </br>
+<p1>Flying a skip rentry profile this scenario can be used with Pursuit MFD for automated landing on the subsequent ballistic arc, taking manual control in the final landing phase.</p1>
+</br> </br>
+<p1> Left-Shift-0 will activate / deactivate speed brakes. </p1>
+</br> </br>
+<p1>NOTE: Gusev Station is set up for use with the high resolution Mars textures available at http://orbit.medphys.ucl.ac.uk/download.html and Jarmoniks' D3D9 client with terrain flattening enabled.</p1>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 89044.0071032729
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship DeepstarAerolander1
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET DeepstarAerolander1
+  MODE Cockpit
+  FOV 49.56
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Orbit
+  PROJ Ship
+  FRAME Equator
+  ALT
+  REF Mars
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Map
+  REF Mars
+  TARGET Gusev Station
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS -6784694.833 -288694.304 653481.989
+  RVEL -705.0990 -597.2970 -7587.3311
+  AROT -64.181 -16.473 134.677
+  VROT 0.0580 -0.0077 0.0000
+  PRPLEVEL 0:0.911512
+  DOCKINFO 3:0,DeepstarLander1 4:0,DeepstarLander2
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  NAVFREQ 0 0
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Mars
+  RPOS -1755142.896 1373125.408 -2943689.095
+  RVEL 1850.6355 -2003.6530 -2039.1093
+  AROT -8.143 -48.873 140.884
+  VROT -0.0633 -0.0037 -0.0042
+  PRPLEVEL 0:0.615309
+  DOCKINFO 4:0,MarsStation
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 500 501
+  XPDR 520
+  NOSE_DOCK_DOORS 1 1.0000
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Mars
+  RPOS -1755130.511 1373122.104 -2943676.250
+  RVEL 1850.6355 -2003.6530 -2039.1093
+  AROT -8.143 -48.873 140.884
+  VROT -0.0633 -0.0037 -0.0042
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  XPDR 481
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Mars
+  RPOS -1755128.164 1373125.358 -2943678.500
+  RVEL 1850.6355 -2003.6530 -2039.1093
+  AROT -8.143 -48.873 140.884
+  VROT -0.0633 -0.0037 -0.0042
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  XPDR 480
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Mars
+  RPOS -2303649.648 2344986.225 1158548.250
+  RVEL -957.5203 562.8202 -3329.6212
+  AROT 167.241 17.506 -124.204
+  PRPLEVEL 0:0.962241
+  IDS 0:562 100
+  NAVFREQ 40 240
+  XPDR 560
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Mars
+  RPOS -2303649.651 2344986.227 1158548.244
+  RVEL -957.5203 562.8202 -3329.6212
+  AROT 167.241 17.506 -124.204
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Landed Phobos
+  POS -57.6539520 -2.9176840
+  HEADING 98.46
+  ALT 6.700
+  AROT -15.348 -56.265 105.808
+  PRPLEVEL 0:0.497049
+  IDS 0:572 100
+  NAVFREQ 40 240
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Landed Phobos
+  POS -58.4691973 -3.0921986
+  HEADING 98.46
+  ALT 76.365
+  AROT 0.000 -0.000 0.000
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Earth
+  RPOS -6784716.703 -288520.233 653431.177
+  RVEL -705.2039 -597.2678 -7587.1858
+  AROT -170.183 -42.992 22.810
+  VROT -0.0580 0.0000 -0.0077
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:3,EarthStation
+  IDS 0:542 100
+  NAVFREQ 0 0
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Earth
+  RPOS -6784731.576 -288531.024 653418.973
+  RVEL -705.2047 -597.2652 -7587.1870
+  AROT -170.183 -42.992 22.810
+  VROT -0.0580 0.0000 -0.0077
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:4,EarthStation
+  IDS 0:552 100
+  NAVFREQ 0 0
+  XPDR 550
+END
+MarsStation:Deepstar\MarsStation
+  STATUS Orbiting Mars
+  RPOS -1755016.856 1373109.818 -2943580.148
+  RVEL 1850.5532 -2003.5312 -2038.9968
+  AROT 171.857 48.873 39.116
+  VROT 0.0633 -0.0037 0.0042
+  AFCMODE 7
+  PRPLEVEL 0:0.978769
+  DOCKINFO 0:4,Deepstar
+  IDS 0:501 100 1:502 100
+  NAVFREQ 0 0
+  XPDR 500
+END
+Rover1:Deepstar\Rover1
+  STATUS Landed Mars
+  POS 175.8627390 -14.5954130
+  HEADING 90.00
+  ALT -0.189
+  AROT 180.000 4.137 -75.405
+  AFCMODE 7
+  NAVFREQ 0 0
+END
+Rover4:Deepstar\Rover2
+  STATUS Landed Phobos
+  POS -57.9080100 -3.0472820
+  HEADING 92.05
+  ALT 0.001
+  AROT -3.839 -57.741 96.297
+  AFCMODE 7
+  NAVFREQ 0 0
+END
+END_SHIPS

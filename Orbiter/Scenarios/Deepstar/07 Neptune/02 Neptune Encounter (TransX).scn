@@ -1,0 +1,213 @@
+BEGIN_HYPERDESC
+<h1> Deepstar Neptune Encounter</h1>
+<p1> Deepstar approaching Neptune orbit insertion.</p1>
+</br> </br>
+<p1>Includes TransX 2018.05.06 encounter stage.</p1> 
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 95827.6556302719
+  Context Deepstar
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Deepstar
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Deepstar
+  MODE Extern
+  POS 2.005847 30.574712 4.297183
+  TRACKMODE TargetRelative
+  FOV 40.26
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Orbit
+  PROJ Frame
+  FRAME Equator
+  ALT
+  REF Neptune
+  TARGET Depot4
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+  Ship  Deepstar
+  FNumber 1
+  Int 5
+  Orbit True
+  Vector  622992810.369 3365854.17709 117077174.87
+  Vector  -8072.42041728 -374.447293893 -3662.00329928
+  Double  6.83652886371e+015
+  Double  95827.6541099
+  Handle Neptune
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+Auto-Center™
+0 0
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  95827.6541099
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_SHIPS
+EarthStation:Deepstar\EarthStation
+  STATUS Orbiting Earth
+  RPOS 6444369.860 154977.442 -2229796.962
+  RVEL 2476.3533 656.7945 7202.6719
+  AROT -126.852 -71.645 54.675
+  VROT 0.0686 -0.0038 -0.0142
+  PRPLEVEL 0:0.911512
+  DOCKINFO 1:0,DeepstarAerolander1 2:0,DeepstarAerolander2
+  IDS 0:511 100 1:512 100 2:513 100 3:514 100 4:515 100
+  XPDR 510
+END
+Deepstar:Deepstar\Deepstar
+  STATUS Orbiting Neptune
+  RPOS 621932281.823 3316666.338 116596111.019
+  RVEL -8074.6210 -374.4600 -3662.4173
+  AROT -174.162 65.490 -3.220
+  PRPLEVEL 0:0.628129
+  DOCKINFO 0:0,DeepstarLander1 1:0,DeepstarLander2
+  IDS 0:522 100 1:524 100 2:526 100 3:528 100 4:530 100
+  NAVFREQ 510 511
+  XPDR 520
+  SPIN_GRAVITY 1 0.4415
+END
+DeepstarProbe1:UCSO\DeepstarProbe1
+  STATUS Orbiting Neptune
+  RPOS 621932266.397 3316665.238 116596101.525
+  RVEL -8074.6210 -374.4600 -3662.4173
+  AROT -174.162 65.490 -3.220
+  ATTACHED 0:0,Deepstar
+  PRPLEVEL 0:0.900173
+  NAVFREQ 0 0
+  XPDR 481
+END
+DeepstarProbe2:UCSO\DeepstarProbe2
+  STATUS Orbiting Neptune
+  RPOS 621932264.492 3316665.920 116596105.656
+  RVEL -8074.6210 -374.4600 -3662.4173
+  AROT -174.162 65.490 -3.220
+  ATTACHED 0:1,Deepstar
+  PRPLEVEL 0:0.877655
+  XPDR 480
+END
+DeepstarAerolander1:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 6444195.184 154934.121 -2229741.791
+  RVEL 2476.3069 656.7224 7202.4684
+  AROT 16.400 -14.888 10.860
+  VROT -0.0142 0.0686 -0.0038
+  PRPLEVEL 0:0.999934
+  DOCKINFO 0:1,EarthStation
+  IDS 0:562 100
+  XPDR 560
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab1:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 6444195.186 154934.124 -2229741.785
+  RVEL 2476.3069 656.7224 7202.4684
+  AROT 16.400 -14.888 10.860
+  VROT -0.0142 0.0686 -0.0038
+  ATTACHED 0:0,DeepstarAerolander1
+  PRPLEVEL 0:1.000000
+END
+DeepstarAerolander2:Deepstar\Aerolander
+  STATUS Orbiting Earth
+  RPOS 6444187.398 154961.133 -2229747.583
+  RVEL 2476.3027 656.7195 7202.4604
+  AROT 16.400 -14.888 100.860
+  VROT -0.0686 -0.0142 -0.0038
+  PRPLEVEL 0:0.999600
+  DOCKINFO 0:2,EarthStation
+  IDS 0:572 100
+  XPDR 570
+  PAYLOAD_BAY 1 1.0000
+END
+Spacehab2:UCSO\DeepstarSpacehab
+  STATUS Orbiting Earth
+  RPOS 6444187.401 154961.134 -2229747.577
+  RVEL 2476.3027 656.7195 7202.4604
+  AROT 16.400 -14.888 100.860
+  VROT -0.0686 -0.0142 -0.0038
+  ATTACHED 0:0,DeepstarAerolander2
+  PRPLEVEL 0:1.000000
+END
+DeepstarLander1:Deepstar\Lander
+  STATUS Orbiting Neptune
+  RPOS 621932281.662 3316659.499 116596112.074
+  RVEL -8074.6210 -374.4600 -3662.4173
+  AROT -174.162 65.490 176.780
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:0,Deepstar
+  IDS 0:542 100
+  XPDR 540
+END
+DeepstarLander2:Deepstar\Lander
+  STATUS Orbiting Neptune
+  RPOS 621932281.984 3316673.178 116596109.964
+  RVEL -8074.6210 -374.4600 -3662.4173
+  AROT -174.162 65.490 -3.220
+  PRPLEVEL 0:0.999000
+  DOCKINFO 0:1,Deepstar
+  IDS 0:552 100
+  XPDR 550
+END
+Depot4:Deepstar\Depot4
+  STATUS Orbiting Neptune
+  RPOS 10362537.011 46681282.299 57802588.698
+  RVEL 8280.2897 -4310.7642 1996.7008
+  AROT -99.620 -47.937 -45.531
+  VROT 0.0000 0.0073 0.0000
+  PRPLEVEL 0:0.998938
+  IDS 0:401 100 1:402 100
+  XPDR 400
+END
+END_SHIPS
